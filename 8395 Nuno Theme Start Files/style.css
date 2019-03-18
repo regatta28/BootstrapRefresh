@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 body {
-    overflow: hidden;
+    overflow: auto;
     font-family: 'Open Sans', sans-serif;
     color: #502696;
 }
@@ -21,7 +21,7 @@ body {
     font-size: .9em; 
     margin-bottom: 10px;
     letter-spacing: .1rem;
-    background: rgba(0, 0, 0, 0.6)!important;
+    background: rgba(0, 0, 0, 0.8)!important;
 }
 
 .navbar-brand a {
@@ -44,8 +44,8 @@ body {
 /*------ Landing Page -----------*/
 
 
-.home-inner {
-    background-image: url(img/computers.png)
+.home-wrap {
+    background-image: url(img/computers.png);
 }
 .caption {
     width: 100%;
@@ -188,6 +188,26 @@ footer .svg-inline--fa:hover {
 }
 hr.socket {
     width: 100%;
-    border-top: .2rem solid #189582;
+    text-align: center;
+    border-top: .2rem solid lightgrey;
     margin-top: 3rem;
 }
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
